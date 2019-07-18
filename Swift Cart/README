@@ -1,0 +1,1 @@
+This is a project done in Java FX. It can predict the possible product a customer is most likely to buy based on his/her buying score. This buying score is calculated using the dataset using the fields such as gender,age and salary from a Mall Dataset.

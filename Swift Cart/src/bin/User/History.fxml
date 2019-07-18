@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="1067.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.HistoryController">
+   <children>
+      <Label fx:id="bal" layoutX="350.0" layoutY="554.0" prefHeight="42.0" prefWidth="328.0" text="Current Balance : 0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="854.0" layoutY="579.0" onAction="#adder" prefHeight="35.0" prefWidth="99.0" ripplerFill="#28bef5" style="-fx-background-color: lightblue;" text="Add Balance" />
+      <JFXListView fx:id="list" layoutX="82.0" layoutY="140.0" prefHeight="400.0" prefWidth="679.0" />
+      <Label layoutX="807.0" layoutY="32.0" text="Account Information" textFill="#0eabff">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="32.0" text="Account History" textFill="#0eabff">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="usr" layoutX="813.0" layoutY="152.0" prefHeight="20.0" prefWidth="206.0" text="User Name :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="usr1" layoutX="840.0" layoutY="197.0" prefHeight="20.0" prefWidth="206.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="gen" layoutX="813.0" layoutY="197.0" prefHeight="20.0" prefWidth="206.0" text="Gender:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="age" layoutX="813.0" layoutY="240.0" prefHeight="20.0" prefWidth="206.0" text="Age:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="email" layoutX="813.0" layoutY="279.0" prefHeight="20.0" prefWidth="206.0" text="Email:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="854.0" layoutY="523.0" onAction="#edit" prefHeight="35.0" prefWidth="99.0" ripplerFill="#28bef5" style="-fx-background-color: lightblue;" text="Edit Info" />
+      <JFXButton buttonType="RAISED" layoutX="854.0" layoutY="634.0" onAction="#refresh" prefHeight="35.0" prefWidth="99.0" ripplerFill="#28bef5" style="-fx-background-color: lightblue;" text="Refresh" />
+   </children>
+</AnchorPane>

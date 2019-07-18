@@ -1,0 +1,29 @@
+.parent{
+    -fx-background-color: #fff;
+}
+.sidebar{
+    -fx-background-color: #333645;
+}
+.btns{
+    -fx-background-color: transparent;
+}
+.btns:hover{
+    -fx-background-color: #202332;
+}
+.bck{
+	-fx-background-image: url("1.jpg");
+}
+.jfx-list-cell{
+	-fx-background-insets:0.0;
+}
+.jfx-list-cell.jfx-ripple{
+	-fx-ripple-fill:lightgreen;
+}
+.jfx-list-cell:hover{
+	-fx-background-colour:#1bd79c;
+}
+.jfx-list-view{
+	-fx-background-insets:0;
+	-fx-cell-vertical-margin:10.0;
+	-fx-vertical-gap:10;
+}

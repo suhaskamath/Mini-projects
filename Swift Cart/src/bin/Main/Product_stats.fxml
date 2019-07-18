@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.Product_statsController">
+   <children>
+      <PieChart fx:id="pie" layoutX="100.0" layoutY="66.0" />
+      <Label fx:id="product" layoutX="65.0" layoutY="35.0" text="Product:" textFill="#00c8ff">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="pname" layoutX="46.0" layoutY="545.0" prefHeight="31.0" prefWidth="264.0" promptText="Product Name" />
+      <JFXTextField fx:id="cat" layoutX="370.0" layoutY="545.0" prefHeight="31.0" prefWidth="290.0" promptText="Target Category" />
+      <JFXTextField fx:id="price" layoutX="46.0" layoutY="586.0" prefHeight="31.0" prefWidth="264.0" promptText="Price" />
+      <JFXTextField fx:id="type" layoutX="370.0" layoutY="586.0" prefHeight="31.0" prefWidth="290.0" promptText="Type of  product" />
+      <JFXButton buttonType="RAISED" layoutX="305.0" layoutY="642.0" onAction="#save" prefHeight="45.0" prefWidth="111.0" ripplerFill="#0b5d72" style="-fx-background-color: #04c8ff;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

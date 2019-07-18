@@ -1,0 +1,61 @@
+.parent{
+    -fx-background-color: #fff;
+}
+.sidebar{
+    -fx-background-color: #333645;
+}
+.btns{
+    -fx-background-color: transparent;
+}
+.btns:hover{
+    -fx-background-color: #202332;
+}
+.bck{
+	-fx-background-image: url("1.jpg");
+}
+.jfx-list-cell{
+	-fx-background-insets:0.0;
+
+        -fx-padding: 15;
+        -fx-spacing: 10;
+        -fx-background-radius: 20px;
+}
+.jfx-list-cell.jfx-ripple{
+	-fx-ripple-fill:lightgreen;
+}
+.jfx-list-cell:hover{
+	-fx-background-colour:#1bd79c;
+}
+.jfx-list-view{
+	-fx-background-insets:0;
+	-fx-cell-vertical-margin:10.0;
+	-fx-vertical-gap:10;
+
+}
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color:lightblue;
+}
+.table-view .column-header .label{
+   -fx-text-fill: white;
+   -fx-font-weight: bold;
+   -fx-alignment: CENTER;
+}
+.table-view .cell{
+   -fx-cell-size: 35;
+  -fx-alignment: center-left;
+  -fx-alignment: CENTER_LEFT;
+
+}
+.table-row-cell:hover {
+   -fx-background-color: lightblue;
+   -fx-text-background-color:  #6622CC;
+
+
+}
+.table-border{
+-fx-background-color:white;
+}
+.hbox {
+
+}

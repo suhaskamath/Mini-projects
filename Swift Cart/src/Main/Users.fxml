@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="1067.0" prefWidth="1067.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.UsersController">
+   <children>
+      <TableView fx:id="table" layoutX="24.0" layoutY="64.0" maxWidth="1298.0" onMouseClicked="#show" prefHeight="515.0" prefWidth="1000.0" AnchorPane.bottomAnchor="181.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="187.0" AnchorPane.topAnchor="64.0">
+         <columns>
+            <TableColumn fx:id="name" minWidth="0.0" prefWidth="136.99996948242188" text="Name" />
+            <TableColumn fx:id="email" minWidth="6.0" prefWidth="158.0" text="Email" />
+            <TableColumn fx:id="pass" prefWidth="136.0" text="Password" />
+            <TableColumn fx:id="age" prefWidth="51.0" text="Age" />
+            <TableColumn fx:id="gender" prefWidth="73.0" text="Gender" />
+            <TableColumn fx:id="category" minWidth="0.0" prefWidth="75.0" text="Category" />
+            <TableColumn fx:id="score" prefWidth="101.0" text="Buying Score" />
+            <TableColumn fx:id="bal" prefWidth="124.0" text="Balance" />
+            <TableColumn fx:id="salary" prefWidth="297.0" text="Salary" />
+         </columns></TableView>
+      <JFXButton buttonType="RAISED" layoutX="661.0" layoutY="619.0" onAction="#load" prefHeight="41.0" prefWidth="98.0" ripplerFill="#0ebfff" style="-fx-background-color: AQUA;" text="Refresh" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

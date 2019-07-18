@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="1067.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.ProductController">
+   <children>
+      <JFXListView fx:id="list" depth="1" depthTest="ENABLE" editable="true" layoutX="25.0" layoutY="158.0" prefHeight="528.0" prefWidth="765.0" style="-fx-background-radius: 30px; -fx-background-color: #c5fcff;" styleClass="jfx-ripple" stylesheets="@application.css">
+         <effect>
+            <Glow />
+         </effect></JFXListView>
+      <JFXComboBox fx:id="dropdw" focusColor="AQUA" labelFloat="true" layoutX="553.0" layoutY="69.0" onAction="#category_select" prefHeight="33.0" prefWidth="220.0" promptText="Select Category" style="-fx-text-fill: #00d7ff;" unFocusColor="AQUA" />
+      <JFXComboBox fx:id="sort" focusColor="AQUA" labelFloat="true" layoutX="99.0" layoutY="69.0" onAction="#category_select" prefHeight="33.0" prefWidth="220.0" promptText="Sort By" style="-fx-text-fill: #ffffff;" unFocusColor="AQUA" />
+      <Label layoutX="336.0" layoutY="119.0" text="PRODUCT NAME" textFill="#075d75">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="706.0" layoutY="119.0" text="PRICE" textFill="#075d75">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="search" layoutX="790.0" layoutY="40.0" prefHeight="25.0" prefWidth="265.0" promptText="Enter The Product Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="button2" buttonType="RAISED" layoutX="813.0" layoutY="599.0" onAction="#refresh" prefHeight="61.0" prefWidth="171.0" ripplerFill="#18f1d1" style="-fx-background-color: lightblue;" text="Refresh">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="99.0" layoutY="30.0" prefHeight="15.0" prefWidth="253.0" text="Select a product to edit it" textFill="#086c9e">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="button1" buttonType="RAISED" layoutX="813.0" layoutY="515.0" onAction="#add" prefHeight="61.0" prefWidth="171.0" ripplerFill="#18f1d1" style="-fx-background-color: lightblue;" text="Add">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+
+   </children>
+</AnchorPane>

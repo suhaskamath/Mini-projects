@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AddCompany">
+
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+
+                    android:background="@drawable/background">
+
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/img"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="52dp"
+                        android:src="@drawable/addcompany" />
+
+                <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="267dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginTop="5dp"
+                        android:text="ADD COMPANY"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="300dp">
+
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/companyname"
+                        android:paddingBottom="25dp"
+                        android:hint="Enter the company name"/>
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/salary"
+                        android:layout_below="@+id/companyname"
+                        android:paddingBottom="25dp"
+                        android:hint="Enter the salary offered"
+                        />
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tenmarks"
+                        android:layout_below="@+id/salary"
+                        android:paddingBottom="25dp"
+                        android:hint="Enter the required 10th marks"/>
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/twelevemarks"
+                        android:layout_below="@+id/tenmarks"
+                        android:paddingBottom="25dp"
+                        android:hint="Enter the required 12th Marks"/>
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bemarks"
+                        android:layout_below="@+id/twelevemarks"
+                        android:paddingBottom="25dp"
+                        android:hint="Enter the required B.E Marks"
+                        />
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/job"
+                        android:layout_below="@+id/bemarks"
+                        android:paddingBottom="25dp"
+                        android:hint="Enter the Job Profile"
+                        />
+                <EditText
+                        android:inputType="textMultiLine"
+                        android:hint="Enter the details of the job role(Job Description)"
+                android:lines="8"
+                android:minLines="6"
+                android:gravity="top|left"
+                android:maxLines="10"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                        android:layout_below="@+id/job"
+                        android:id="@+id/description"
+                />
+                <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SUBMIT"
+                        android:onClick="submit"
+                        android:layout_below="@+id/description"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

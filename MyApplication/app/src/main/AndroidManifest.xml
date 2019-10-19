@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.example.myapplication">
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".CompanyStatus"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".UpdateHome"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".UpdatePlaced"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+                android:name=".CompanyListStudent"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+                android:name=".Progress"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+                android:name=".CompanyDetails"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+                android:name=".company_list"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+                android:name=".edit_info"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+                android:name=".AddCompany"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+                android:name=".student_profile_verification"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+                android:name=".Verify_Student"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+                android:name=".Profile"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+                android:name=".teacher_home"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+                android:name=".Student_Home"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+                android:name=".Signup"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+                android:name=".MainActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="pass_enter">Enter your password</string>
+    <string name="repass_enter">Renter your password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="login">Login</string>
+    <string name="signup">SIGNUP</string>
+    <string name="noaccount">Don\'t have an account? Signup</string>
+    <string name="welcome">WELCOME BACK</string>
+    <string name="loginmessage">Login to continue</string>
+    <string name="signup_entry_text">Enter your details carefully it will be verified before account creation</string>
+    <string name="student">STUDENT</string>
+    <string name="teacher">TEACHER</string>
+    <string name="address">Enter your House Address</string>
+    <string name="be_marks">Enter BE marks in percentage</string>
+    <string name="marks_12">Enter 12th marks in percentage</string>
+    <string name="marks_10">Enter 10th marks in Percentage</string>
+    <string name="name">Enter your Full Name</string>
+    <string name="email">Enter your Email Address</string>
+    <string name="gender">Enter Your Gender</string>
+    <string name="teacher_home">Teacher Home</string>
+    <string-array name="gen">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+</resources>

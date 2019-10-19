@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".student_profile_verification">
+    <RelativeLayout
+            android:id="@+id/contain"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/background">
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="verify"
+                android:text="REJECT"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/reject"/>
+
+        <Button
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:onClick="verify"
+                android:text="ACCEPT"
+                android:layout_alignParentRight="true"
+                android:id="@+id/accept"></Button>
+
+    </RelativeLayout>
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contain">
+    <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+
+            android:background="@drawable/background">
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView android:layout_height="200dp"
+                android:layout_width="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/img"
+                android:src="@drawable/profile"
+                android:layout_marginTop="20dp"
+                />
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="300dp">
+
+        <TextView
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:text="Profile"
+                android:textSize="36sp" />
+
+        <TextView
+                android:id="@+id/salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp"
+
+                />
+
+        <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/salary"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp" />
+
+        <TextView
+                android:id="@+id/marks1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gender"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp" />
+
+        <TextView
+                android:id="@+id/marks2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/marks1"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp" />
+
+        <TextView
+                android:id="@+id/marks3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/marks2"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp" />
+
+        <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/marks3"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp" />
+
+        <TextView
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp" />
+
+        <TextView
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/description"
+                android:layout_marginTop="20dp"
+                android:textSize="24sp" />
+
+    </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>
